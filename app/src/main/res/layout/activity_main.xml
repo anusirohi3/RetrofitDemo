@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_opifex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="OPIFEX"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/text_opifex" />
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="BY BUILDERS FOR BUILDERS"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/hfjbdhjb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="11sp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:padding="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:gravity="start"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#aeaeae"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/edit_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:drawableEnd="@drawable/ic_remove_red_eye_black_24dp"
+            android:gravity="start"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="textStart"
+            android:textColorHint="#aeaeae"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_username"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/button_login"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:elevation="6dp"
+            android:paddingStart="29dp"
+            android:paddingEnd="29dp"
+            android:text="LOGIN"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_password"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--<androidx.recyclerview.widget.RecyclerView-->
+    <!--android:layout_width="match_parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/hfjbdhjb"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/hfjbdhjb"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--android:layout_height="match_parent"/>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/country_list"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/hfjbdhjb" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

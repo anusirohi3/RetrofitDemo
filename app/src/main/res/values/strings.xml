@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConstraintsDemoLogin</string>
+    <string name="enter_user_name">Enter User Name</string>
+    <string name="enter_pass">Enter Password</string>
+</resources>
